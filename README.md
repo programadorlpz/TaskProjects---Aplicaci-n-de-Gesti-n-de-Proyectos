@@ -84,6 +84,76 @@ npm start
 
 La página se recargará automáticamente si realizas cambios en el código. También verás errores en la consola si hay algún problema.
 
+## Autenticación y Roles
+
+Para acceder a la aplicación y utilizar las funcionalidades, los usuarios deben iniciar sesión con uno de los correos proporcionados por la API `jsonplaceholder.typicode.com` en el End Point `https://jsonplaceholder.typicode.com/users`. Dependiendo del usuario con el que se autentiquen, tendrán diferentes roles y permisos en la aplicación.
+
+### Usuarios Disponibles y Roles
+A continuación, se detalla el listado de usuarios y los roles que les corresponden:
+
+1. **Leanne Graham (Administrador)**
+   - Correo: `Sincere@april.biz`
+   - Rol: `Administrador`
+   
+2. **Ervin Howell (Administrador)**
+   - Correo: `Shanna@melissa.tv`
+   - Rol: `Administrador`
+
+3. **Clementine Bauch (Administrador)**
+   - Correo: `Nathan@yesenia.net`
+   - Rol: `Administrador`
+
+4. **Patricia Lebsack (Jefe)**
+   - Correo: `Julianne.OConner@kory.org`
+   - Rol: `Jefe`
+
+5. **Chelsey Dietrich (Jefe)**
+   - Correo: `Lucio_Hettinger@annie.ca`
+   - Rol: `Jefe`
+
+6. **Mrs. Dennis Schulist (Jefe)**
+   - Correo: `Karley_Dach@jasper.info`
+   - Rol: `Jefe`
+
+7. **Nicholas Runolfsdottir V (Implementador)**
+   - Correo: `Sherwood@rosamond.me`
+   - Rol: `Implementador`
+
+8. **Glenna Reichert (Implementador)**
+   - Correo: `Chaim_McDermott@dana.io`
+   - Rol: `Implementador`
+
+9. **Clementina DuBuque (Implementador)**
+   - Correo: `Rey.Padberg@karina.biz`
+   - Rol: `Implementador`
+
+### Cómo Iniciar Sesión
+
+Para iniciar sesión en la aplicación, sigue estos pasos:
+
+1. Dirígete a la pantalla de inicio de sesión disponible en `/login`.
+2. Introduce uno de los correos mencionados anteriormente en el campo de "Correo Electrónico".
+3. Haz clic en "Iniciar Sesión".
+
+### Funcionalidades Según el Rol
+
+Dependiendo del rol asignado, los usuarios tendrán diferentes accesos y acciones permitidas:
+
+- **Administrador:**
+  - Puede visualizar todas las tareas.
+  - Tiene permisos para eliminar tareas que no han sido completadas.
+  - Puede realizar cambios en las tareas.
+  
+- **Jefe:**
+  - Puede visualizar todas las tareas asignadas a los implementadores.
+  - Puede crear nuevas tareas y asignarlas a los implementadores.
+  - Puede marcar tareas como "Pendiente" y agregar observaciones.
+
+- **Implementador:**
+  - Solo puede ver las tareas asignadas a su usuario.
+  - Puede marcar sus tareas como "Completadas" o "Pendientes".
+  - Puede añadir razones cuando marca una tarea como "Pendiente".
+
 ## Estructura del Proyecto
 
 El proyecto está organizado de manera modular y escalable para facilitar el mantenimiento y la expansión futura. A continuación, se detalla la estructura de carpetas y archivos principales:
