@@ -44,7 +44,7 @@ describe('authActions', () => {
     axios.get.mockImplementation((url) => {
       if (url === 'https://jsonplaceholder.typicode.com/users') {
         return Promise.resolve({ data: users });
-      } else if (url === '/https://programadorlpz.github.io/TaskProjects---Aplicaci-n-de-Gesti-n-de-Proyectos/assets/role.json') {
+      } else if (url === 'https://programadorlpz.github.io/TaskProjects---Aplicaci-n-de-Gesti-n-de-Proyectos/assets/role.json') {
         return Promise.resolve({ data: roles });
       }
       return Promise.reject(new Error('not found'));
