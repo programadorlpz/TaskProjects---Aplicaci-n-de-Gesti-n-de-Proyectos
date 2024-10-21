@@ -1,0 +1,12 @@
+[
+  { "id": 1, "role": "administrador" },
+  { "id": 2, "role": "administrador" },
+  { "id": 3, "role": "administrador" },
+  { "id": 4, "role": "administrador" },
+  { "id": 5, "role": "jefe" },
+  { "id": 6, "role": "jefe" },
+  { "id": 7, "role": "jefe" },
+  { "id": 8, "role": "implementador" },
+  { "id": 9, "role": "implementador" },
+  { "id": 10, "role": "implementador" }
+]
