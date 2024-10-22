@@ -9,7 +9,7 @@ const useFetchRoles = () => {
   useEffect(() => {
     const fetchRoles = async () => {
       try {
-        const response = await axios.get('/TaskProjects---Aplicaci-n-de-Gesti-n-de-Proyectos/assets/role.json');
+        const response = await axios.get(`${process.env.PUBLIC_URL}/assets/role.json`);
         setRoles(response.data);
       } catch (error) {
         setErrorRoles(error);
