@@ -5,7 +5,7 @@ import axios from 'axios';
 // Función para cargar los roles desde role.json
 const loadRoles = async () => {
   try {
-    const response = await axios.get('/TaskProjects---Aplicaci-n-de-Gesti-n-de-Proyectos/assets/role.json');
+    const response = await axios.get(`${process.env.PUBLIC_URL}/assets/role.json`);
     return response.data;
     return response.data;
   } catch (error) {
