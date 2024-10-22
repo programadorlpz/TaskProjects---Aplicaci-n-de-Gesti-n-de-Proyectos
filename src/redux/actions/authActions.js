@@ -5,7 +5,7 @@ import axios from 'axios';
 // Función para cargar los roles desde role.json
 const loadRoles = async () => {
   try {
-    const response = await axios.get('https://programadorlpz.github.io/Aplicaci-n-de-Gesti-n-de-Proyectos/assets/role.json');
+    const response = await axios.get('https://programadorlpz.github.io/assets/role.json');
     return response.data;
   } catch (error) {
     console.error('Error al cargar los roles desde role.json:', error);
