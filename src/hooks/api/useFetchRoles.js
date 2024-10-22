@@ -9,7 +9,7 @@ const useFetchRoles = () => {
   useEffect(() => {
     const fetchRoles = async () => {
       try {
-        const response = await await axios.get('/assets/role.json');
+        const response = await axios.get('/assets/role.json');
         setRoles(response.data);
       } catch (error) {
         setErrorRoles(error);
