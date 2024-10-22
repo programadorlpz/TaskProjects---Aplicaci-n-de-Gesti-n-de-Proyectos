@@ -9,7 +9,7 @@ const useFetchRoles = () => {
   useEffect(() => {
     const fetchRoles = async () => {
       try {
-        const response = await axios.get('https://programadorlpz.github.io/Aplicaci-n-de-Gesti-n-de-Proyectos/assets/role.json');
+        const response = await axios.get('https://programadorlpz.github.io/assets/role.json');
         setRoles(response.data);
       } catch (error) {
         setErrorRoles(error);
